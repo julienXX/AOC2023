@@ -1,34 +1,53 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-string[] lines = File.ReadAllLines("input.txt");
-int total = 0;
-
-foreach (string line in lines)
+﻿namespace Learning.CSharp
 {
-    char? first = FirstDigit(line);
-    char? last = FirstDigit(Reverse(line));
-    int lineNumber = int.Parse(string.Format("{0}{1}", first, last));
-    total += lineNumber;
-}
-
-Console.WriteLine(total);
-
-char? FirstDigit(string s)
-{
-    foreach (char c in s)
+    public class Calibration
     {
-        if (Char.IsDigit(c))
+        private static int total = 0;
+
+        public static void Main()
         {
-            return c;
+            foreach (string encryptedCalibrationValue in ReadEncryptedCalibrationValues())
+            {
+                int calibrationValue = DecryptCalibrationValue(encryptedCalibrationValue);
+                total += calibrationValue;
+            }
+            Console.WriteLine(total);
+        }
+
+        static string[] ReadEncryptedCalibrationValues()
+        {
+            return File.ReadAllLines("input.txt");
+        }
+
+        static int DecryptCalibrationValue(string line)
+        {
+            char? first = FirstDigit(line);
+            char? last = FirstDigit(Reverse(line));
+            return MakeCalibrationValue(first, last);
+        }
+
+        static int MakeCalibrationValue(char? first, char? last)
+        {
+            return int.Parse(string.Format("{0}{1}", first, last));
+        }
+
+        static char? FirstDigit(string s)
+        {
+            foreach (char c in s)
+            {
+                if (Char.IsDigit(c))
+                {
+                    return c;
+                }
+            }
+            return null;
+        }
+
+        static string Reverse(string s)
+        {
+            char[] charArray = s.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
         }
     }
-    return null;
 }
-
-string Reverse(string s)
-{
-    char[] charArray = s.ToCharArray();
-    Array.Reverse(charArray);
-    return new string(charArray);
-}
-
