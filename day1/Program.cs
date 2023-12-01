@@ -2,19 +2,21 @@
 Console.WriteLine("Hello, World!");
 
 string[] lines = File.ReadAllLines("input.txt");
-int[] allDigits;
+List<int> allDigits = new List<int>();
 
 foreach (string line in lines)
 {
     Nullable<int> first = null;
     Nullable<int> last = null;
-    int[] digits = [];
+    List<int> digits = new List<int>();
 
     foreach (char c in line) {
-	      if(Char.IsDigit(c)) {
-            digits.Append(c);
+        if(Char.IsDigit(c)) {
+            digits.Add(int.Parse(c.ToString()));
         }
     }
-    Console.WriteLine("[{0}]", string.Join(", ", digits));
+    foreach (int d in digits) {
+        Console.WriteLine(d);
+    }
 }
 

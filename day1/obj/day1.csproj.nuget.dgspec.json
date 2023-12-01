@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mg/Documents/AOC2023/day1/day1.csproj": {}
+    "/Users/david/Documents/AOC2023/day1/day1.csproj": {}
   },
   "projects": {
-    "/Users/mg/Documents/AOC2023/day1/day1.csproj": {
+    "/Users/david/Documents/AOC2023/day1/day1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mg/Documents/AOC2023/day1/day1.csproj",
+        "projectUniqueName": "/Users/david/Documents/AOC2023/day1/day1.csproj",
         "projectName": "day1",
-        "projectPath": "/Users/mg/Documents/AOC2023/day1/day1.csproj",
-        "packagesPath": "/Users/mg/.nuget/packages/",
-        "outputPath": "/Users/mg/Documents/AOC2023/day1/obj/",
+        "projectPath": "/Users/david/Documents/AOC2023/day1/day1.csproj",
+        "packagesPath": "/Users/david/.nuget/packages/",
+        "outputPath": "/Users/david/Documents/AOC2023/day1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mg/.nuget/NuGet/NuGet.Config"
+          "/Users/david/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/8.0.0/libexec/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

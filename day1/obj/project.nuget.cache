@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u9hAVmgnywhGykbDwm9Cy67lQtNoxVcgFhy7q1rIWUNOdLYQseWfAU/GaHjTPjtJHpsrv51Cgn3pR7bXwD7t6g==",
+  "dgSpecHash": "QF0FYCJtXJwH58AmpMC2/MfrDrEwYuj5qn/s22AmpEDcmByrw3QcAVTCdilwhnl5+ZdFSg0CF/bBarKGapkqVw==",
   "success": true,
-  "projectFilePath": "/Users/mg/Documents/AOC2023/day1/day1.csproj",
+  "projectFilePath": "/Users/david/Documents/AOC2023/day1/day1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
