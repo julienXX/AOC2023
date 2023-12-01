@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QF0FYCJtXJwH58AmpMC2/MfrDrEwYuj5qn/s22AmpEDcmByrw3QcAVTCdilwhnl5+ZdFSg0CF/bBarKGapkqVw==",
+  "dgSpecHash": "2aj4tk1Iu3i9vjNI0htVw98noCbgYtld4ueCcleNOfYtsYLWwYSrqqwJruzFZEefHun7V0vTE1IXGv6C0YC93w==",
   "success": true,
-  "projectFilePath": "/Users/david/Documents/AOC2023/day1/day1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/julien/src/AOC2023/day1/day1.csproj",
+  "expectedPackageFiles": [
+    "/home/julien/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.0/microsoft.aspnetcore.app.ref.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

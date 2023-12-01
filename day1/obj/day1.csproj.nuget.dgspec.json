@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/david/Documents/AOC2023/day1/day1.csproj": {}
+    "/home/julien/src/AOC2023/day1/day1.csproj": {}
   },
   "projects": {
-    "/Users/david/Documents/AOC2023/day1/day1.csproj": {
+    "/home/julien/src/AOC2023/day1/day1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/david/Documents/AOC2023/day1/day1.csproj",
+        "projectUniqueName": "/home/julien/src/AOC2023/day1/day1.csproj",
         "projectName": "day1",
-        "projectPath": "/Users/david/Documents/AOC2023/day1/day1.csproj",
-        "packagesPath": "/Users/david/.nuget/packages/",
-        "outputPath": "/Users/david/Documents/AOC2023/day1/obj/",
+        "projectPath": "/home/julien/src/AOC2023/day1/day1.csproj",
+        "packagesPath": "/home/julien/.nuget/packages/",
+        "outputPath": "/home/julien/src/AOC2023/day1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/david/.nuget/NuGet/NuGet.Config"
+          "/home/julien/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -48,12 +48,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.0, 8.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
