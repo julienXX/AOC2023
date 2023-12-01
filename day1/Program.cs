@@ -6,15 +6,15 @@ int[] allDigits;
 
 foreach (string line in lines)
 {
-    int first;
-    int last;
-    int[] digits;
+    Nullable<int> first = null;
+    Nullable<int> last = null;
+    int[] digits = [];
 
     foreach (char c in line) {
-	if(Char.IsDigit(c)) {
+	      if(Char.IsDigit(c)) {
             digits.Append(c);
         }
     }
+    Console.WriteLine("[{0}]", string.Join(", ", digits));
 }
 
-Console.WriteLine(line);
