@@ -2,28 +2,30 @@
 Console.WriteLine("Hello, World!");
 
 string[] lines = File.ReadAllLines("input.txt");
-List<int> allDigits = new List<int>();
+int total = 0;
 
 foreach (string line in lines)
 {
     Nullable<int> first = null;
     Nullable<int> last = null;
-    List<int> digits = new List<int>();
+    List<char> digits = new List<char>();
 
     foreach (char c in line) {
         if(Char.IsDigit(c)) {
-            digits.Add(int.Parse(c.ToString()));
+Console.WriteLine("char {0}", c);
+            digits.Add(c);
         }
     }
-    first = digits.First();
-    last = digits.Last();
-    string digit = $"{first}{last}";
-    allDigits.Add(int.Parse(digit));
-
-    foreach (int d in allDigits) {
-        Console.WriteLine(d);
+    foreach (char d in digits) {
+Console.WriteLine("char {0}", d);
     }
+    first = digits.First();
+Console.WriteLine("first {0}", first);
+    last = digits.Last();
+Console.WriteLine("last {0}", last);
+    int lineNumber = int.Parse(string.Format("{0}{1}", first, last));
+    total += lineNumber;
+    break;
 
-    int total = allDigits.Sum(x => Convert.ToInt32(x));
-    Console.WriteLine(total);
 }
+Console.WriteLine(total);
